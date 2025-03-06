@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# Electron Course
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the code and resources for the Electron course.
 
-Currently, two official plugins are available:
+## Course Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The course is divided into several modules, each covering a specific aspect of Electron development.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with the course, follow these steps:
 
-- Configure the top-level `parserOptions` property like this:
+1.  Clone this repository to your local machine.
+2.  Navigate to the directory of the module you want to work on.
+3.  Follow the instructions in the module's README file.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Before starting the course, you should have a basic understanding of:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+-   HTML
+-   CSS
+-   JavaScript
+-   Node.js
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Modules
+
+-   Module 1: Introduction to Electron
+-   Module 2: Building Your First Electron App
+-   Module 3: Packaging and Distribution
+
+## Contributing
+
+Contributions to this repository are welcome. If you find any errors or have suggestions for improvement, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
